@@ -3,7 +3,7 @@ const removeFromArray = function(arr, ...nums) {
 
     for (const num of nums) {
         for (let i = 0; i < resultArr.length; i++) {
-            if (resultArr[i] == num) {
+            if (resultArr[i] === num) {
                 resultArr.splice(i,1)
                 i = 0 // checks through the new array
             }
